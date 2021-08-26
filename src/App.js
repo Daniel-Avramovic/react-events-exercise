@@ -31,10 +31,11 @@ class App extends React.Component{
 render(){
   return(
   <div className="form">
-    <input type="text" value={this.state.username} onChange={this.onChangeUsername}/>
-    <input type="text" value={this.state.password} onChange={this.onChangePassword}/>
-    <button onClick={this.login}>Login</button>
-    <button onClick={this.reset}>Reset</button>
+    <h1>Login</h1>
+    <input type="text" value={this.state.username} onChange={this.onChangeUsername} placeholder="Username"/>
+    <input type="text" value={this.state.password} onChange={this.onChangePassword} placeholder="Password"/>
+    <button type="button" className="btn btn-primary" onClick={this.login}>Login</button>
+    <button id="reset" onClick={this.reset}>Reset</button>
   </div>
   )
 }
